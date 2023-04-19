@@ -7,11 +7,17 @@ export default function Feed() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
+    let isCancelled = false;
     axios.get('https://dummyjson.com/posts').then((response) => {
       console.log(response.data.posts);
-      setPosts(response.data.posts);
+      if (!isCancelled) {
+        setPosts(response.data.posts);
+      }
     })
 
+    return () => {
+      isCancelled = true;
+    }
   }, [])
 
   return (
