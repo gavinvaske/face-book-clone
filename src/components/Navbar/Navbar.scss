@@ -35,9 +35,15 @@
 
   .middle-navbar {
     display: flex;
+    margin-right: 180px;
+
+    & > *:hover {
+      background: $lightGrayColor;
+    }
     
     & > * {
       color: $lightestColor;
+      margin-left: 25px;
     }
   }
 

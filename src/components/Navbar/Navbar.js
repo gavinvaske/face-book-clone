@@ -20,16 +20,16 @@ export default function Navbar() {
       </div>
       <div className="middle-navbar">
         <IconButton >
-          <HomeIcon />
+          <HomeIcon sx={{fontSize: '48px'}}/>
         </IconButton>
         <IconButton >
-          <PlayCircleIcon />
+          <PlayCircleIcon sx={{fontSize: '48px'}} />
         </IconButton>
         <IconButton >
-          <Diversity3Icon />
+          <Diversity3Icon sx={{fontSize: '48px'}} />
         </IconButton>
         <IconButton >
-          <SportsEsportsIcon />
+          <SportsEsportsIcon sx={{fontSize: '48px'}} />
         </IconButton>
       </div>
       <div className="right-navbar">
