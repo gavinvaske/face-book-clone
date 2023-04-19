@@ -2,11 +2,15 @@ import React from 'react';
 import './Navbar.scss';
 import SearchIcon from '@mui/icons-material/Search';
 import HomeIcon from '@mui/icons-material/Home';
-import { IconButton } from '@mui/material';
+import { Avatar, IconButton } from '@mui/material';
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import Diversity3Icon from '@mui/icons-material/Diversity3';
 import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 import CircleIcon from '../CircleIcon/CircleIcon';
+import PersonIcon from '@mui/icons-material/Person';
+import NotificationsIcon from '@mui/icons-material/Notifications';
+import AppsIcon from '@mui/icons-material/Apps';
+import ModeCommentIcon from '@mui/icons-material/ModeComment';
 
 export default function Navbar() {
   return (
@@ -33,10 +37,10 @@ export default function Navbar() {
         </IconButton>
       </div>
       <div className="right-navbar">
-        <CircleIcon Icon={HomeIcon} />
-        <CircleIcon Icon={HomeIcon} />
-        <CircleIcon Icon={HomeIcon} />
-        <CircleIcon Icon={HomeIcon} />
+        <CircleIcon Icon={AppsIcon} />
+        <CircleIcon Icon={ModeCommentIcon} />
+        <CircleIcon Icon={NotificationsIcon} />
+        <CircleIcon Icon={PersonIcon} />
       </div>
     </div>
   )

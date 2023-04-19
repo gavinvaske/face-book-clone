@@ -1,0 +1,12 @@
+.create-message-form {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  cursor: pointer;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
