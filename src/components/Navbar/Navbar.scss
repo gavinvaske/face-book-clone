@@ -1,0 +1,52 @@
+@import '../../variables.scss';
+
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: $darkGrayColor;
+  padding: 12px 0;
+  justify-content: space-between;
+
+  .search-area {
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    background-color: $lightGrayColor;
+    padding: 0 5px;
+    color: $lightestColor;
+
+    input {
+      margin-left: 5px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      font-size: 22px;
+      text-overflow: ellipsis;
+      color: $lightestColor;
+      min-width: 350px;
+    }
+  }
+
+  .left-navbar {
+    display: flex;
+  }
+
+  .middle-navbar {
+    display: flex;
+    
+    & > * {
+      color: $lightestColor;
+    }
+  }
+
+  .right-navbar {
+    display: flex;
+    color: $lightestColor;
+    margin-right: 5px;
+
+    & > * {
+      margin: 0 5px;
+    }
+  }
+}

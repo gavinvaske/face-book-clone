@@ -1,0 +1,10 @@
+@import '../../variables.scss';
+
+.circle-icon {
+  background-color: $lightGrayColor;
+  width: 60px;
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
