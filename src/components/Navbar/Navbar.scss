@@ -8,6 +8,8 @@
   padding: 12px 0;
   justify-content: space-between;
   position: sticky;
+  top: 0;
+  z-index: 999;
 
   .search-area {
     display: flex;
