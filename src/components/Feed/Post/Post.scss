@@ -1,0 +1,52 @@
+@import '../../../variables.scss';
+
+.post {
+  display: flex;
+  flex-direction: column;
+  background-color: $lightGrayColor;
+  border-radius: 15px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  color: $lightestColor;
+
+  .post-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    align-items: center;
+    border-bottom: 0.1 solid lightgray;
+
+    .left-post-header {
+      display: flex;
+    }
+
+    .post-header-description {
+      p {
+        margin: 0;
+        padding-left: 12px;
+      }
+
+      .post-owner {
+        font-weight: 500;
+      }
+      
+      .post-date {
+        font-weight: 200;
+        color: lightgray;
+      }
+    }
+  }
+
+  .post-body {
+    padding: 15px;
+
+    .title {
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .body {
+      font-size: 16px;
+    }
+  }
+}
